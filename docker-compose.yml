@@ -395,8 +395,8 @@ services:
 #      - HOST_WHITELIST=dnsnane list #optional
     volumes:
       - transmission:/config
-      - ${TRANSMISSION-DIR}:/downloads
-      - ${TRANSMISSION-DIR}:/watch
+      - '${TRANSMISSION-DIR}:/downloads'
+      - '${TRANSMISSION-DIR}:/watch'
     ports:
       - 9091:9091
       - 51413:51413
